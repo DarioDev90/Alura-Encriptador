@@ -1,0 +1,425 @@
+/* Layout Responsive Mobile */
+
+html {
+  font-size: 62.5%;
+  min-width: 320px;
+  max-width: 1400px;
+}
+
+body {
+  background-color: #8ec5fc;
+  background: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%) fixed;
+  font-family: "Oleo Script Swash Caps", cursive;
+}
+
+main,
+header {
+  display: flex;
+  height: auto;
+  padding: 2rem;
+  flex-direction: column;
+}
+
+header {
+  flex-direction: row;
+}
+
+.container-logo {
+  width: 70px;
+  height: 70px;
+  background-image: radial-gradient(
+    circle at 50% -20.71%,
+    #fffff6 0,
+    #fffbe1 16.67%,
+    #faedcc 33.33%,
+    #f2deb5 50%,
+    #ebcf9f 66.67%,
+    #e6c08c 83.33%,
+    #e2b17a 100%
+  );
+  border-radius: 50%;
+  position: relative;
+}
+
+.container-logo img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  margin: 24px auto;
+}
+
+.titulo-principal {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.titulo-principal h1 {
+  font-size: 3rem;
+  color: #4a605c;
+  text-shadow: 3px -3px 10px rgba(0, 0, 0, 0.6);
+  margin: 20px 0;
+}
+
+.container-izquierdo,
+.container-derecho {
+  width: 100%;
+  border-radius: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-izquierdo {
+  height: 30rem;
+  background: #f6f5ef;
+  box-shadow: 3px 3px 10px lightgray;
+  border: 1px solid #dddac6;
+  position: relative;
+}
+
+.input-texto {
+  width: 75%;
+  height: 70%;
+  font-size: 1.6rem;
+  background: #f6f5ef;
+  caret-color: #b9ab9c;
+  margin-bottom: 1.5rem;
+  scrollbar-color: #dddac6 #e0e0e0;
+}
+
+.input-texto,
+.output-texto {
+  color: #737373;
+  border-style: none;
+  resize: none;
+  outline: none;
+  scrollbar-width: thin;
+}
+
+.input-texto::-webkit-scrollbar,
+.output-texto::-webkit-scrollbar {
+  width: 8px;
+}
+
+.input-texto::-webkit-scrollbar-track {
+  background-color: #e0e0e0;
+}
+
+.input-texto::-webkit-scrollbar-thumb {
+  background-color: #dddac6;
+}
+
+.container-izquierdo p {
+  font-size: 1rem;
+  color: #737373;
+}
+
+.container-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.btn {
+  width: 100%;
+  height: 4rem;
+  padding: 1rem;
+  border-radius: 24px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-encriptar {
+  background: #f4e17c;
+  border: 1px solid #dbcb70;
+}
+
+.btn-encriptar,
+.btn-desencriptar {
+  color: #353232;
+  margin-bottom: 1rem;
+}
+
+.btn-encriptar:hover,
+.btn-desencriptar:hover,
+.btn-copiar:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 10px #a6a6a6;
+  transition: 1s transform;
+}
+
+.btn-encriptar:active {
+  background: #dbcb70;
+}
+
+.btn-desencriptar {
+  background: #9c7054;
+  border: 1px solid #87624b;
+}
+
+.btn-desencriptar:active {
+  background: #87624b;
+}
+
+.btn-copiar {
+  background: #8f240c;
+  border: 1px solid #7a210d;
+  color: #ffffff;
+}
+
+.btn-copiar:active {
+  background: #7a210d;
+}
+
+.container-derecho {
+  height: 20rem;
+  background-color: #f4e17c;
+  margin-top: 2rem;
+  border: 1px solid #dbcb70;
+  box-shadow: 3px 3px 10px lightgray;
+}
+
+.container-texto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.output-texto {
+  display: none;
+  width: 80%;
+  border-style: none;
+  text-align: center;
+  font-size: 13px;
+  background: none;
+  scrollbar-color: #a9ceb6 #cbddd2;
+}
+
+.output-texto::-webkit-scrollbar-track {
+  background-color: #cbddd2;
+}
+
+.output-texto::-webkit-scrollbar-thumb {
+  background-color: #a9ceb6;
+}
+
+.texto-primary {
+  color: #545454;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.texto-secondary {
+  font-size: 1.3rem;
+  color: #737373;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+footer span {
+  font-size: 1.3rem;
+}
+
+footer span:nth-child(1),
+footer span:nth-child(3) {
+  color: #736c6c;
+}
+
+.corazon {
+  width: 1.3rem;
+  margin: 0.4rem;
+}
+
+footer span:nth-child(4) {
+  color: #66525d;
+  margin: 0.4rem 0.4rem;
+}
+
+.icon-linkedin,
+.icon-github {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-linkedin {
+  margin-right: 0.4rem;
+}
+
+/* Layout Responsive Tablet */
+
+@media screen and (min-width: 760px) {
+  main {
+    justify-content: flex-start;
+    padding: 4rem 5rem;
+  }
+
+  header {
+    margin-left: 30px;
+  }
+
+  .container-izquierdo {
+    height: 40rem;
+    justify-content: space-around;
+  }
+
+  .input-texto {
+    width: 85%;
+    height: 75%;
+    font-size: 1.8rem;
+    margin-top: 3rem;
+  }
+
+  .container-buttons {
+    flex-direction: row;
+    margin-top: 3rem;
+  }
+
+  .btn-encriptar,
+  .btn-desencriptar {
+    margin-right: 2rem;
+  }
+
+  .container-derecho {
+    height: 26rem;
+    box-shadow: 0 4px 4px lightgrey;
+  }
+
+  footer {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Layout Responsive Desktop */
+
+@media screen and (min-width: 1024px) {
+  main {
+    height: 93vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  header {
+    width: 100%;
+    margin-left: 120px;
+  }
+
+  .container-logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .container-logo img {
+    width: 150px;
+    margin: 30px auto;
+    left: -23px;
+  }
+
+  .titulo-principal h1 {
+    font-size: 5rem;
+    margin: 35px 0;
+  }
+
+  .container-izquierdo {
+    width: 70rem;
+    height: 80%;
+    margin-right: 5rem;
+  }
+
+  .container-izquierdo p {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .input-texto {
+    width: 80%;
+    height: 63%;
+    font-size: 2.5rem;
+    margin-top: 3.5rem;
+  }
+
+  .container-buttons {
+    position: absolute;
+    width: 105rem;
+    margin-top: 33rem;
+  }
+
+  .btn-encriptar {
+    margin: 0 6rem;
+  }
+
+  .btn-desencriptar {
+    margin-right: 13rem;
+  }
+
+  .btn-copiar {
+    margin-right: 2rem;
+    opacity: 0.9;
+  }
+
+  .container-derecho {
+    width: 28rem;
+    height: 80%;
+    margin-top: 0;
+    box-shadow: 3px 3px 10px lightgray;
+    background-image: url(../imagenes/font-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 0 2rem;
+  }
+
+  .container-texto {
+    justify-content: flex-start;
+  }
+
+  .container-texto p:nth-child(2) {
+    margin-top: 70%;
+  }
+
+  .output-texto {
+    width: 90%;
+    height: 65%;
+    margin-top: 15%;
+    text-align: left;
+    font-size: 1.8rem;
+  }
+
+  footer {
+    margin: 1rem 0 0 0;
+  }
+
+  footer span {
+    font-size: 1.8rem;
+  }
+
+  footer span:nth-child(3) {
+    margin-left: 8px;
+  }
+
+  .icon-linkedin,
+  .icon-github {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
